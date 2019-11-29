@@ -1206,6 +1206,13 @@ section5{
     z-index: 1;
 }
 
+.vidTopper{
+    position: absolute;
+    width: 396px;
+    cursor: pointer;
+    z-index: 1;
+}
+
 #skewDemoGridText{
     position: absolute;
     top: 295vh;
@@ -1289,16 +1296,13 @@ section5{
     opacity: 0;
 }
 
-#mtCard{
+#mtCard, #mtCard2, #mtCard3{
     -webkit-transition: opacity 1.5s ease-in-out;
     -moz-transition: opacity 1.5s ease-in-out;
     -o-transition: opacity 1.5s ease-in-out;
     transition: opacity 1.5s ease-in-out;
 }
 
-#mtCard:hover{
-    opacity: 0;
-}
 
 /*
 #squareSkewBg1{
@@ -1451,7 +1455,7 @@ margin-bottom: 10%;
 }
 
 #bottomSpace{
-height: 300rem;
+height: 185rem;
 background-color: white;
 
 }

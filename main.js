@@ -12,10 +12,47 @@
 				pointerEvents: true
 			});
             
-//            $('#cardImgDG').hover(function(){
-//                dgCard.setAttribute('src', 'dgGif1.gif')
-//            })
+            const mtCard = document.getElementById("mtCard");
+            const mtCard2 = document.getElementById("mtCard2");
+            const mtCard3 = document.getElementById("mtCard3");
+            const video = document.querySelectorAll("video");
+            
+            $("#mtCard").hover(function(){
+                $(this).css("opacity", "0");
+                video[2].play();
+                }, function(){$(this).css("opacity", "1");
+                video[2].pause();
+                video[2].currentTime = 0;
+            })      
+                        
+            $("#mtCard2").hover(function(){
+                $(this).css("opacity", "0");
+                video[1].play();
+                }, function(){$(this).css("opacity", "1");
+                video[1].pause();
+                video[1].currentTime = 0;
+            }) 
+            
+                        
+            $("#mtCard3").hover(function(){
+                $(this).css("opacity", "0");
+                video[0].play();
+                }, function(){$(this).css("opacity", "1");
+                video[0].pause();
+                video[0].currentTime = 0;
+            }) 
+            
+//            if (mtCard.style.opacity == "0"){
+//                video[2].play();
+//            }
+//            const videos = document.querySelectorAll("video")
 //            
+//            videos.forEach(video => {
+//                video.addEventListener("mouseover", function(){
+//                    this.play()
+//                })
+//            })
+//                    
             $('#cardImgDG').click(function(){
                 modal.open();
             })
@@ -265,7 +302,6 @@
             
             const section = document.querySelector("section");
             const section2 = document.querySelector("section2");
-            const section3 = document.querySelector("section3");
             let currentPixel = window.pageYOffset;
             
             const looper = function (){
@@ -275,8 +311,6 @@
                 
                 section.style.transform = "skewY(-" + speed + "deg)";
                 section2.style.transform = "skewY(-" + speed + "deg)";
-//                section3.style.transform  = "rotate(-" + speed + "deg)";
-                section3.style.transform  = "style.opacity(" + speed + ")";
                 
                 currentPixel = newPixel;
                 
