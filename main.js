@@ -69,29 +69,38 @@
                 Custombox.modal.close();
             })
             
-            $('#cardImgSF').click(function(){
+            
+            $('.cardImgMT').click(function(){
                 modal3.open();
             })
             
-            $('.sfCloseBtn').click(function(){
-                Custombox.modal.close();  
-            })
-            
-            $('#cardImgB').click(function(){
-                modal4.open();                    
-            })
-            
-            $('.bCloseBtn').click(function(){
+            $('.bCloseBtn').click(function(){ //change later to MTcloseBtn, including css
                 Custombox.modal.close();
             })
             
-            $('#cardImgMisc').click(function(){
-                modal5.open();                    
-            })
-            
-            $('.miscCloseBtn').click(function(){
-                Custombox.modal.close();
-            })
+//            $('#cardImgSF').click(function(){
+//                modal3.open();
+//            })
+//            
+//            $('.sfCloseBtn').click(function(){
+//                Custombox.modal.close();  
+//            })
+//            
+//            $('#cardImgB').click(function(){
+//                modal4.open();                    
+//            })
+//            
+//            $('.bCloseBtn').click(function(){
+//                Custombox.modal.close();
+//            })
+//            
+//            $('#cardImgMisc').click(function(){
+//                modal5.open();                    
+//            })
+//            
+//            $('.miscCloseBtn').click(function(){
+//                Custombox.modal.close();
+//            })
             
             $('.resumeCloseBtn').click(function(){
                 Custombox.modal.close();
