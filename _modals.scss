@@ -1,0 +1,535 @@
+
+#demoGridModal{
+    @include modalStyle();
+
+    p{
+        padding-right: 70%;
+        padding-left: 10%;
+        font-family: font(Sans);
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .demoGridCloseBtn {
+        position: absolute;
+        padding-left: 2% !important;
+        margin-left: 0 !important;
+        font-size: 2.7rem !important;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover{
+            color: #ee7170;
+            font-size: 2.9rem !important;
+        }
+    }
+
+    #demoGridCloseSubText{
+        position: absolute;
+        top: 8.8vh;
+        padding-right: 0 !important;
+        padding-left: 3vw !important;
+        font-size: .8rem !important;
+    }
+
+    #demoGridHeader{
+        padding-right: 0 !important;
+        margin-bottom: 0;
+        font-family: font(Oran);
+        font-size: 7rem !important;
+        text-align: center !important;
+    }
+
+    #demoGridSubTitle{
+        font-family: font(Sans);
+        padding-right: 0 !important;
+        padding-bottom: 7%;
+        margin-top: 0;
+        text-align: center !important;
+    }
+
+    #demoGridCaveat{
+        padding-left: 10%;
+        padding-bottom: 3%;
+        padding-right: 0% !important;
+        font-size: .8rem !important;
+        text-align: justify;
+    }
+
+    #demoGridIntro{
+        top: 37vh;
+        padding-right: 65% !important;
+    }
+
+    #demoGridFocus{
+        top: 52vh;
+        float: right;
+        padding-right: 10% !important;
+    }
+
+    #demoGridScreenshot1 img{
+        width: 80%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #demoGridScreenshot2 img{
+        width: 80%;
+        padding-bottom: 4%;
+    }
+}
+
+#istModal{
+    @include modalStyle();
+
+    p{
+        font-family: 'Open Sans', serif;
+        font-size: 1.2rem;
+        text-align: left;
+        padding-right: 70%;
+        padding-left: 10%;
+    }
+
+    .istCloseBtn{
+        position: absolute;
+        font-size: 2.7rem !important;
+        margin-left: 0 !important;
+        padding-left: 2% !important;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover{
+            color: #ff1a2d;
+            font-size: 2.9rem !important;
+        }
+    }
+
+    #istCloseSubText{
+        position: absolute;
+        padding-right: 0 !important;
+        padding-left: 3vw !important;
+        top: 8.8vh;
+        font-size: .8rem !important;
+    }
+
+    #istHeader{
+        font-family: 'Oranienbaum', serif !important;
+        font-size: 6.5rem !important;
+        margin-bottom: 0;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+        
+    #istSubTitle{
+        font-family: 'Open Sans', serif;
+        margin-top: 0;
+        padding-right: 0 !important;
+        text-align: center !important;
+        padding-bottom: 7%;
+    }  
+    
+    #istFocus{
+        top: 52vh;
+        float: right;
+        padding-right: 10% !important;
+    }
+
+    #istIntro{
+        top: 37vh;
+        padding-right: 65% !important;
+    }
+
+    #istScreenshot1 img{
+        width: 80%;
+        margin-left: 0;
+        padding-left: 0;
+        padding-bottom: 3%;
+    }
+        
+    #istScreenshot2 img{
+        width: 80%;
+        padding-bottom: 4%;
+    }    
+}  
+
+#mtModal{
+    @include modalStyle();
+    max-height: 1000vh;
+    height: 700vh;
+
+    p{
+        font-family: 'Open Sans', serif;
+        font-size: 1.2rem;
+        text-align: justify;;
+        padding-right: 45%;
+        padding-left: 9.5%;
+    }
+    
+    .mtCloseBtn{
+        position: absolute;
+        font-size: 2.7rem !important;
+        margin-left: 0 !important;
+        padding-left: 2% !important;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover{
+            color: #ee7170;
+            font-size: 2.9rem !important;
+        }
+    }
+
+    #mtCloseSubText{
+        position: absolute;
+        padding-right: 0 !important;
+        padding-left: 3vw !important;
+        top: 8.8vh;
+    }
+            
+    #mtHeader{
+        font-family: 'Oranienbaum', serif !important;
+        font-size: 7rem !important;
+        margin-bottom: 0;
+        margin-top: 14vh;
+        padding-right: 0 !important;
+    }
+
+    #mtSubTitle{
+        font-family: 'Open Sans', serif;
+        margin-top: 0;
+        position:absolute;
+        top: 25.5vh;
+        left: .4vw;
+        padding-bottom: 4%;
+    }
+
+    #mtFocus{
+        top: 36vh;
+        padding-left: 9.5%;
+        padding-right: 70%;
+        display: none;
+    }
+
+    #onBoardingTitle{
+        position: absolute;
+        font-size: 2.5rem !important;
+        text-align: left;
+        padding-left: 9.5%;
+        margin-bottom: 0 !important;
+        top: 285vh;
+    }
+        
+    #onBoardingSubTitle{
+        position: absolute;
+        top: 294vh;
+    }
+
+    #mtIntro{
+        top: 12vh;
+        position: absolute;
+        font-size: 1.5rem !important;
+        left: 33vw;
+        padding-right: 20% !important;
+        z-index: 2;
+    }
+
+    #intialMockUp img{
+        width: 50%;
+        height: auto;
+        top: 28vh;
+        left: 3vw;
+        padding-top: 5vh;
+        position: absolute; 
+    }
+
+    #mockUpClump img{
+        width: 78%;
+        top: 27vh;
+        left: 1vw;
+        padding-top: 5vh;
+        position: absolute;
+    }
+
+    #intialMockUp2 img{
+        width: 50%;
+        height: auto;
+        top: 80vh;
+        left: 20vw;
+        padding-top: 6vh;
+        position: absolute; 
+    }
+
+    #intialMockUp3 img{
+        width: 50%;
+        height: auto;
+        top: 80vh;
+        left: 45vw;
+        padding-top: 6vh;
+        position: absolute;     
+    }
+
+    #mtDockingSC1 img{
+        width: 50%;
+        height: auto;
+        top: 80vh;
+        left: -5vw;
+        padding-top: 5vh;
+        position: absolute;     
+    }
+
+    #mtDockingSC2 img{
+        width: 50%;
+        height: auto;
+        top: 80vh;
+        left: 20vw;
+        padding-top: 6vh;
+        position: absolute; 
+    }
+    
+    #mtDockingSC3 img{
+        width: 50%;
+        height: auto;
+        top: 80vh;
+        left: 45vw;
+        padding-top: 6vh;
+        position: absolute; 
+    }
+
+    #colorSquare1{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        background-color: #a5b8c5;
+    }
+
+    #colorSquare2{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 30vh;
+        left: 16vw;
+        background-color: #9a98b3;
+    }
+        
+    #colorSquare3{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 30vh;
+        left: 22vw;
+        background-color: #c28c89;
+    }
+
+    #colorHex1{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 30vh;
+        left: 0.5vw;
+    }
+        
+    #colorHex2{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 30vh;
+        left: 6.5vw;
+    }
+        
+    #colorHex3{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 30vh;
+        left: 12.5vw;
+    }
+
+    #mtProjectSummary{
+        position: absolute;
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        top: 144vh;
+        // margin-right: 10% !important;
+        // margin-left: 10% !important;
+        width: 75%;
+        margin-left: 9%;
+        height: 60vh;
+
+        #mtProjectDetails{
+            flex: .8;
+            background-color: #46484f;
+
+            #mtDetailYear{
+                #mtYearDetail{
+                    position: absolute;
+                    left: -5vw;
+                    top: -1vh;
+                    color: #f3eff0;
+                    font-size: 3.8rem;
+                }
+                #mtYearDetail2{
+                    position: absolute;
+                    font-family: "Hind", sans-serif;
+                    top: -22vh;
+                    color: #f3eff0 ;
+                    left: 3vw;
+                    font-size: 12rem;
+                }
+
+                #mtLangDetail{
+                    position: absolute;
+                    left: -6vw;
+                    top: 13vh;
+                    color: #292b32;
+                    font-size: 4.8rem;
+                }
+
+                #mtLangDetail2{
+                    font-family: "Hind", sans-serif;
+                    position: absolute;
+                    top: 1vh;
+                    color: #292b32 ;
+                    left: -4vw;
+                    font-size: 12.8rem;
+                }
+
+            }
+        }
+
+        #mtProcessPara{
+            flex: 1;
+            background-color: #292b31;
+
+            #dProcess{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.6rem;
+                padding-top: 7%;
+                margin-right: 16%;
+                word-spacing: -2px;
+                margin-left: 14%;
+            }
+        }
+
+        #mtProcessPara2{
+            flex: 2;
+            background-color: red;
+        }
+    }
+
+
+    #testTitle{
+        font-size: 2.5rem !important;
+        position: absolute;
+        top: 133vh;
+        text-align: left;
+        padding-left: 9%;
+        margin-bottom: 0 !important;
+    }
+    
+
+
+    #dProcess2{
+        position: absolute;
+        top: 156vh;
+    }
+
+    #dProcess3{
+        position: absolute;
+        top: 177vh;
+    }
+
+    #dProcess4{
+        position: absolute;
+        top: 201vh;
+    }
+
+    #mtTestSC img{
+        display: none;
+        width: 50%;
+        height: auto;
+        top: 210vh;
+        left: -5vw;
+        position: absolute;
+        z-index: 1;
+    }
+        
+    #mtResultsSC img{
+        width: 35%;
+        height: auto;
+        top: 160vh;
+        left: 20vw;
+        position: absolute;
+        display: none;
+    }
+
+    #mtResultsSC2 img{
+        width: 42%;
+        height: auto;
+        top: 158vh;
+        left: 21vw;
+        position: absolute;
+    }
+
+    #mtResultsSC3 img{
+        width: 45%;
+        height: auto;
+        top: 167vh;
+        left: 38vw;
+        position: absolute;
+    }
+
+        
+        
+}
+
+#resumeModal{
+    display: none;
+
+    .resumeCloseBtn{
+        position: absolute;
+        font-size: 2.7rem !important;
+        margin-left: 0 !important;
+        padding-left: 2% !important;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover{
+            color: #ee7170;
+            font-size: 2.9rem !important;
+        }
+    }
+
+    p{
+        font-family: 'Open Sans', serif;
+        font-size: 1.2rem;
+        text-align: left;
+        padding-right: 70%;
+        padding-left: 10%;
+    }
+
+    #resumeCloseSubText{
+        position: absolute;
+        padding-right: 0 !important;
+        padding-left: 3vw !important;
+        top: 8.8vh;
+        font-size: .8rem !important;
+    }
+        
+}
+
+
+
+#bCloseSubText{
+position: absolute;
+padding-right: 0 !important;
+padding-left: 3vw !important;
+top: 8.8vh;
+}
+    

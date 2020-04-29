@@ -1,0 +1,7 @@
+@function pallete($color-name){
+    @return map-get($color-option, $color-name);
+}
+
+@function font($font-name){
+    @return map-get($font-option, $font-name)
+}

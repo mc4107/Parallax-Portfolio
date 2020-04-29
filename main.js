@@ -6,7 +6,6 @@
         });
         
 		$( document ).ready(function() {
-			console.log( "ready!" );
 			var scene = document.getElementById('scene');
 			var parallaxInstance = new Parallax(scene, {
 				pointerEvents: true
@@ -41,20 +40,9 @@
                 video[0].pause();
                 video[0].currentTime = 0;
             }) 
-            
-//            if (mtCard.style.opacity == "0"){
-//                video[2].play();
-//            }
-//            const videos = document.querySelectorAll("video")
-//            
-//            videos.forEach(video => {
-//                video.addEventListener("mouseover", function(){
-//                    this.play()
-//                })
-//            })
-//                    
+                 
             $('#cardImgDG').click(function(){
-                modal.open();
+                demoGridModal.open();
             })
             
             $('.demoGridCloseBtn').click(function(){
@@ -62,7 +50,7 @@
             })
             
             $('#cardImgIST').click(function(){
-                modal2.open();
+                istModal.open();
             })
             
             $('.istCloseBtn').click(function(){
@@ -71,51 +59,26 @@
             
             
             $('.cardImgMT').click(function(){
-                modal3.open();
+                mtModal.open();
             })
             
             $('.bCloseBtn').click(function(){ //change later to MTcloseBtn, including css
                 Custombox.modal.close();
             })
             
-//            $('#cardImgSF').click(function(){
-//                modal3.open();
-//            })
-//            
-//            $('.sfCloseBtn').click(function(){
-//                Custombox.modal.close();  
-//            })
-//            
-//            $('#cardImgB').click(function(){
-//                modal4.open();                    
-//            })
-//            
-//            $('.bCloseBtn').click(function(){
-//                Custombox.modal.close();
-//            })
-//            
-//            $('#cardImgMisc').click(function(){
-//                modal5.open();                    
-//            })
-//            
-//            $('.miscCloseBtn').click(function(){
-//                Custombox.modal.close();
-//            })
-            
             $('.resumeCloseBtn').click(function(){
                 Custombox.modal.close();
             })
             
             $("#resumeShape").click(function(){
-                modal6.open();
+                resumeModal.open();
             })
             
-            
             // Instantiate new modal
-            var modal = new Custombox.modal({
+            var demoGridModal = new Custombox.modal({
                 content: {
                     effect: 'fadein',
-                    target: '#modal',
+                    target: '#demoGridModal',
                     close: 'true',
                     animateFrom: 'right',
                     fullscreen: 'true',
@@ -123,10 +86,10 @@
                 }
             });
             
-            var modal2 = new Custombox.modal({
+            var istModal = new Custombox.modal({
                 content: {
                     effect: 'fadein',
-                    target: '#modal2',
+                    target: '#istModal',
                     close: 'true',
                     animateFrom: 'right',
                     fullscreen: 'true',
@@ -134,10 +97,10 @@
                 }
             })
             
-            var modal3 = new Custombox.modal({
+            var mtModal = new Custombox.modal({
                 content: {
                     effect: 'fadein',
-                    target: '#modal3',
+                    target: '#mtModal',
                     close: 'true',
                     animateFrom: 'right',
                     fullscreen: 'true',
@@ -145,32 +108,10 @@
                 }
             })
             
-            var modal4 = new Custombox.modal({
-                content: {
-                    effect: 'fadein',
-                    target: '#modal4',
-                    close: 'true',
-                    animateFrom: 'right',
-                    fullscreen: 'true',
-                    speedIn: 400
-                }
-            })
-            
-            var modal5 = new Custombox.modal({
-                content: {
-                    effect: 'fadein',
-                    target: '#modal5',
-                    close: 'true',
-                    animateFrom: 'right',
-                    fullscreen: 'true',
-                    speedIn: 400
-                }                
-            })
-            
-            var modal6 = new Custombox.modal({
+            var resumeModal = new Custombox.modal({
                     content: {
                     effect: 'fadein',
-                    target: '#modal6',
+                    target: '#resumeModal',
                     close: 'true',
                     animateFrom: 'right',
                     fullscreen: 'true',
@@ -290,18 +231,18 @@
 
                 }
 
-                if(wScroll > $('.shape').offset().top -$(window).height()){
-                    let startingPoint = $('.shape').offset().top -$(window).height();
+                if(wScroll > $('.tearShape').offset().top -$(window).height()){
+                    let startingPoint = $('.tearShape').offset().top -$(window).height();
                     var dynamicPoint = wScroll - startingPoint;
 
                     if(dynamicPoint <= 520){
                         dynamicPoint = dynamicPoint - 90;
-                        $('.shape').css({
+                        $('.tearShape').css({
                             'height': ''+ dynamicPoint +'px'
                         });
 
                         if(dynamicPoint <= 280){
-                            $('.shape2').css({
+                            $('.tearShape2').css({
                                 'height': ''+ dynamicPoint +'px'
                             });
                         }

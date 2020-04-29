@@ -1,0 +1,82 @@
+/*IMAGES*/
+.aliceBannerImg{
+    @include imagePos(34vh, 10vw);
+    img{
+        width: 85%;
+        transform: skew(-10deg)
+    }
+}
+
+.pushkinBannerImg{
+    @include imagePos(14vh, 3vw);
+    img{
+        width: 21%;
+        transform: skew(11deg) rotate(180deg);
+        opacity: .8;
+    }
+}
+ 
+.manBannerImg{
+    @include imagePos(64vh, 80vw);
+    img{
+        width: 90%;
+        transform: skew(0deg);
+        opacity: .8;
+    }
+}
+    
+.bearBannerImg{
+    @include imagePos(12vh, 85vw);
+    img{
+        width: 90%;
+        transform: skew(5deg);
+        opacity: .8;
+    }
+}
+   
+.umbrellaBannerImg{
+    @include imagePos(70vh, 45vw);
+    img{
+        width: 70%;
+        transform: skew(0deg);
+        opacity: .8;
+    }
+}
+    
+.spriteBannerImg{
+    @include imagePos(-10vh, 55vw);
+    img{
+        width: 60%;
+        transform: skew(10deg);
+        opacity: .8;
+    }
+}
+     
+    
+.lionBannerImg{ //change name later
+    @include imagePos(30vh, -25vw);
+    img{
+        width: 40%;
+        opacity: .8;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+}
+    
+.eyes{
+    @include imagePos(175vh, 5vw);
+    width: 50%;
+}
+        
+.dancingMan{
+    position: absolute;
+    top: 100vh;
+    left: 60vw;
+    width: 35%;
+    z-index: 0;
+    opacity: .85;
+}

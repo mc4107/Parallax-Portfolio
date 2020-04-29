@@ -1,0 +1,8 @@
+$font-option: (
+    "Oran": 'Oranienbaum',
+    "Sans": 'Open Sans'
+);
+
+@function font($font-name){
+    @return map-get($font-option, $font-name)
+}

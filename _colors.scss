@@ -1,0 +1,10 @@
+$color-option: (
+    "primary": #f23640,
+    "accent": #45eff0,
+    "background": #f2eff0,
+    "text": #393641
+);
+
+@function pallete($color-name){
+    @return map-get($color-option, $color-name);
+}

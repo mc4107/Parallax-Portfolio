@@ -1,0 +1,124 @@
+@mixin orbStyle($top, $left, $shapeSize, $textSize){
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $shapeSize;
+    height: $shapeSize;
+    border-radius: 250px;
+    font-size: $textSize;
+    line-height: $shapeSize;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    font-family: font(Oran);
+    z-index: 2;
+}
+
+@mixin orbDetailStyle($top, $left, $shapeSize, $background){
+    width: $shapeSize;
+    z-index: 1;
+    left: $left;
+    top: $top;
+    position: absolute;
+    height: $shapeSize;
+    border-radius: 250px;
+    background: $background;
+    opacity: .7;
+}
+
+@mixin imagePos($top, $left){
+    position: absolute;
+    z-index: 0;
+    left: $left !important;
+    top: $top !important;
+} 
+
+@mixin titlePos($top, $left, $font, $fontSize, $color){
+    top: $top !important; 
+    left: $left !important;
+    font-family: $font;
+    font-size: $fontSize;
+    color: $color;
+}
+
+@mixin transitionTextPos($mTop, $mLeft, $width){
+    position: absolute;
+    margin-top: $mTop;
+    margin-left: $mLeft;
+    width: $width;
+    font-family: font(Oran);
+    font-size: 3.5rem;
+    z-index: 2;
+}
+
+@mixin tearShape($top, $left, $width, $height, $skew){
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    opacity: .9;
+    transform: $skew;
+}
+
+@mixin bannerRotatingShape($top, $left){
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    top: $top !important;
+    left: $left !important;
+    height: 125px;
+    width: 125px;
+    font-size: 1.5rem;
+    font-family: font(Sans);
+    color: #ffff;
+    background-color: #393641;
+    z-index: 3;
+    animation: rotation 15s infinite linear;
+    cursor: pointer;
+}
+
+@mixin sectionPos($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    transition: transform 0.45s;
+    will-change: transform;
+}
+
+@mixin skewNumberPos($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    z-index: 1;
+}
+
+@mixin skewTextPos($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    z-index: 1;
+}
+
+@mixin skewTitleStyle(){
+    font-family: font(Oran);
+    font-size: 6.5rem !important;
+    margin-bottom: 0;
+    padding-right: 0 !important;
+    text-align: center !important;
+}
+
+@mixin skewSubTitleStyle($mLeft){
+    font-family: font(Sans);
+    margin-top: 0;
+    padding-right: 0 !important;
+    margin-left: $mLeft;
+}
+
+@mixin modalStyle(){
+    display: none;
+    background-color: #f2eff0;
+    z-index: 3;
+    overflow: scroll;
+    text-align: center;
+}

@@ -1,0 +1,434 @@
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'images';
+@import 'mediaQueries';
+@import 'modals';
+
+body{
+    margin: 0;
+    background-color: pallete(background);
+    color: pallete(text);
+
+    #header{
+        position: fixed;
+        max-height: 85vh;
+        overflow: hidden;
+
+        #resumeShape{
+            @include bannerRotatingShape(18vh, 18vw);
+        }
+
+        #gitShape{
+            @include bannerRotatingShape(55vh, 55vw);
+            border-radius: 50%;
+            text-decoration: none;
+        }
+            
+        #socialShape{ // Triangle Shape, no Mixin
+            top: 6vh !important;
+            left: 60vw !important;
+            width: 0px;
+            height: 0px;
+            border-style: inset;
+            border-width: 0 80px 133.2px 80px;
+            border-color: transparent transparent pallete(text) transparent;
+
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            animation: rotation 15s infinite linear;
+            cursor: pointer;
+                        
+            p{
+                position: relative;
+                top: 75px;
+                left: -47px;
+                width: 93px;
+                height: 73px;
+                margin: 0px;
+                font-family: font(Sans);
+                font-size: 1.2rem;
+                text-align: center;
+                color: #ffff;
+            }
+        }
+
+        #name{
+            @include titlePos(18vh, 30vw, font(Oran), 17rem, pallete(primary));
+            opacity: .9;
+        }
+
+        #subTitle{
+            @include titlePos(45.5vh, 45.8vw, font(Sans), 2.5rem, pallete(lighterText));
+        }
+        
+        #subTitle2{
+            @include titlePos(45.8vh, 57.3vw, font(Sans), 2.5rem, pallete(lighterText));
+        }
+
+        #subTitle3{
+            @include titlePos(45.5vh, 58.7vw, font(Sans), 2.5rem, pallete(lighterText));
+        }
+    }
+
+    #wrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 80vh;
+        background-color: white;
+        overflow: hidden;
+    
+        #emptyOne{
+            height: 120px;
+            background-color: white;
+        }
+
+        #window{
+            height: 400px;
+            background-image: url(me3.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #introText{
+            @include transitionTextPos(19vh, 10vw, 25%);
+
+            p{
+                margin: 0;  
+            }
+
+            #introTextSub{
+                padding-left: 5%;
+                font-family: font(Sans);
+                font-size: 2rem; 
+
+                #contactLink{
+                    color: #ff1238;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        #skillText{
+            @include transitionTextPos(105vh, 38vw, 40%);
+        }
+
+        .orbs{
+            transition: transform 0.25s;
+        
+            .orb-1{
+                @include orbStyle(115vh, 0, 62.5px, 15px);
+            }
+        
+            .orb-2{
+                @include orbStyle(125vh, 5vw, 225px, 40px);
+            }
+        
+            .orb-3
+            {
+                @include orbStyle(95vh, 0, 155px, 45px);
+            }
+        
+            .orb-4
+            {
+                @include orbStyle(105vh, 105vw, 180px, 50px);
+            }
+        
+            .orb-5
+            {
+                @include orbStyle(97vh, 100vw, 80px, 20px);
+            }
+        
+            .orb-6
+            {
+                @include orbStyle(140vh, 106vw, 125px, 35px);
+            }
+        
+            .orb-7
+            {   
+                @include orbStyle(128vh, 79vw, 280px, 50px);
+            }
+        
+            .orb-8
+            {
+                @include orbStyle(125vh, 110vw, 80px, 20px);
+            }
+        
+            .orbDetail-1
+            {   
+                @include orbDetailStyle(124.5vh, 110.2vw, 85px, pallete(accent));
+            }
+        
+            .orbDetail-2
+            {
+                @include orbDetailStyle(124.5vh, 109.5vw, 85px, pallete(primary));
+            }
+        
+            .orbDetail-3
+            {
+                @include orbDetailStyle(124.5vh, 5.2vw, 230px, pallete(accent));
+                
+            }
+        
+            .orbDetail-4
+            {
+                @include orbDetailStyle(124.5vh, 4.7vw, 230px, pallete(primary));
+            }
+        
+            .orbDetail-5
+            {
+                @include orbDetailStyle(96.5vh, 100.2vw, 85px, pallete(accent));
+            }
+        
+            .orbDetail-6
+            {
+                @include orbDetailStyle(96.5vh, 99.5vw, 85px, pallete(primary));
+            }
+        
+            .orbDetail-7
+            {
+                @include orbDetailStyle(128vh, 80vw, 280px, pallete(primary));
+            }
+        
+            .orbDetail-8
+            {
+                @include orbDetailStyle(128vh, 78vw, 280px, pallete(accent));
+            }
+        
+            .rectBg{
+                position: absolute;
+                top: 100vh;
+                left: 60vw;
+                z-index: 1;
+                width: 155px;
+                height: 250px;
+                opacity: .9;
+                transform: skewY(-20deg);
+                background: pallete(primary);
+            }
+                
+            .rectBg2{
+                position: absolute;
+                top: 130vh;
+                left: 20vw;
+                z-index: 1;
+                width: 115px;
+                height: 290px;
+                opacity: .9;
+                transform: skew(-20deg);
+                background: pallete(primary);
+            }
+        
+            .squareBg{
+                position: absolute;
+                z-index: 0;
+                top: 107vh;
+                left: 14vw;
+                background: #f2eff0;
+                width: 300px;
+                height: 300px;
+            }
+            
+            .squareBg2{
+                position: absolute;
+                z-index: 0;
+                top: 127vh;
+                left: 64vw;
+                background: #f2eff0;
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        #workText{
+            @include transitionTextPos(210vh, 60vw, 40%);
+        }
+    
+        #middle{
+            margin-top: 50%;
+
+            .dos{
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 5%;
+                font-family: font(Sans);
+                font-size: 1.5rem;
+                color: white;
+                opacity: .3;
+            }
+        }
+
+        #bottomSpace{
+            height: 175rem;
+            background-color: white;
+        }
+
+        .tearShape{
+            @include tearShape(217vh, 40.5vw, 25px, 1px, skewY(20deg));
+            background: pallete(primary);
+        }
+            
+        .tearShape2{
+            @include tearShape(208vh, 19vw, 20px, 1px, skewY(-20deg));
+            background: #f2eff0;
+        }
+            
+        .tearShape3{
+            @include tearShape(208vh, 15vw, 0, 0, skewY(-20deg));
+            border-top: 15px solid transparent;
+            border-right: 50px solid #f2eff0;
+            border-bottom: 15px solid transparent;
+        }
+
+        .skewNumber{
+            font-size: 4rem !important;
+            color: #f34b53;
+        }
+
+        #skewNumber1{
+            @include skewNumberPos(295vh, 27%);
+        }
+
+        #skewDemoGridText{
+            @include skewTextPos(295vh, 5%);
+
+            #demoGridTitle{
+                @include skewTitleStyle();
+            }
+
+            #demoGridSubText{
+                @include skewSubTitleStyle(8vw);
+            }
+        }        
+
+        section{
+            @include sectionPos(295vh, 65vh);
+
+            .skewScreenshot{
+                position: absolute;
+                width: 1000px;
+                z-index: 1;
+                cursor: pointer;
+
+                -webkit-transition: opacity 1.5s ease-in-out;
+                -moz-transition: opacity 1.5s ease-in-out;
+                -o-transition: opacity 1.5s ease-in-out;
+                transition: opacity 1.5s ease-in-out;
+
+                &:hover{
+                    opacity: 0;
+                }
+            }
+        }
+
+        #skewNumber2{
+            @include skewNumberPos(384vh, 80%);
+        }
+
+        #skewISTText{
+            @include skewTextPos(385vh, 70%);
+
+            #istTitle{
+                @include skewTitleStyle();
+            }
+
+            #istSubText{
+                @include skewSubTitleStyle(9vw);
+            }
+        }
+
+        section2{
+            @include sectionPos(385vh, 15vh);
+        
+            .skewScreenshot1{
+                position: absolute;
+                width: 1000px;
+                z-index: 1;
+                cursor: pointer;
+
+                -webkit-transition: opacity 1.5s ease-in-out;
+                -moz-transition: opacity 1.5s ease-in-out;
+                -o-transition: opacity 1.5s ease-in-out;
+                transition: opacity 1.5s ease-in-out;
+
+                &:hover{
+                    opacity: 0;
+                }
+            }
+        }
+
+        #skewNumber3{
+            @include skewNumberPos(486vh, 90%);
+        }
+
+        #skewMtText{
+            @include skewTextPos(485vh, 68%);
+            
+            #mtTitle{
+                @include skewTitleStyle();
+            }
+
+            #mtSubText{
+                @include skewSubTitleStyle(9vw);
+            }
+        }
+
+        /*
+            .vidTopper and .skewScreenshot2 are both classes nested within section3, section4 and section5. 
+        */
+        .vidTopper{
+            position: absolute;
+            width: 396px;
+            z-index: 1;
+            cursor: pointer;
+            -webkit-transition: opacity 1.5s ease-in-out;
+            -moz-transition: opacity 1.5s ease-in-out;
+            -o-transition: opacity 1.5s ease-in-out;
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        .skewScreenshot2{
+            position: absolute;
+            width: 300px;
+            z-index: 1;
+            cursor: pointer;
+
+        }
+
+        section3{
+            @include sectionPos(475vh, 10vh);
+        }
+
+        section4{
+            @include sectionPos(475vh, 50vh);
+        }
+        
+        section5{
+            @include sectionPos(475vh, 90vh);
+        }
+
+        footer{
+            margin-bottom: 1vh;
+            font-family: font(Oran);
+            font-size: .8rem;
+            text-align: center;
+            color: pallete(lighterText);
+            opacity: .9;
+        }
+    }
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
