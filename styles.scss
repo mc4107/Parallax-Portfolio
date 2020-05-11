@@ -9,6 +9,7 @@ body{
     margin: 0;
     background-color: pallete(background);
     color: pallete(text);
+    font-size: 16px;
 
     #header{
         position: fixed;
@@ -57,7 +58,7 @@ body{
         }
 
         #name{
-            @include titlePos(18vh, 30vw, font(Oran), 17rem, pallete(primary));
+            @include titlePos(18vh, 30vw, font(Oran), 17em, pallete(primary));
             opacity: .9;
         }
 
@@ -193,12 +194,12 @@ body{
         
             .orbDetail-7
             {
-                @include orbDetailStyle(128vh, 80vw, 280px, pallete(primary));
+                @include orbDetailStyle(128vh, 79.5vw, 280px, pallete(primary));
             }
         
             .orbDetail-8
             {
-                @include orbDetailStyle(128vh, 78vw, 280px, pallete(accent));
+                @include orbDetailStyle(128vh, 78.5vw, 280px, pallete(accent));
             }
         
             .rectBg{

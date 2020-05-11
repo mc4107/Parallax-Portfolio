@@ -1,6 +1,8 @@
 
 #demoGridModal{
     @include modalStyle();
+    max-height: 1000vh;
+    height: 325vh;
 
     p{
         padding-right: 70%;
@@ -29,53 +31,266 @@
         top: 8.8vh;
         padding-right: 0 !important;
         padding-left: 3vw !important;
-        font-size: .8rem !important;
+        // font-size: .8rem !important;
     }
 
     #demoGridHeader{
         padding-right: 0 !important;
+        margin-top: 14vh;
         margin-bottom: 0;
         font-family: font(Oran);
-        font-size: 7rem !important;
-        text-align: center !important;
+        font-size: 8rem !important;
     }
 
     #demoGridSubTitle{
         font-family: font(Sans);
-        padding-right: 0 !important;
-        padding-bottom: 7%;
+        position: absolute;
+        top: 27.5vh;
+        left: .4vw;
+        padding-right: 65% !important;
+        padding-bottom: 4%;
         margin-top: 0;
-        text-align: center !important;
+    }
+
+    #demoGridCaveatAst{
+        font-size: 2rem;
+        position: absolute;
+        top: 63vh;
+        left: 65vw;
     }
 
     #demoGridCaveat{
-        padding-left: 10%;
-        padding-bottom: 3%;
-        padding-right: 0% !important;
-        font-size: .8rem !important;
-        text-align: justify;
+        font-size: .8rem;
+        position: absolute;
+        top: 65vh;
+        padding-right: 19%;
+        left: 56vw;
     }
 
     #demoGridIntro{
-        top: 37vh;
-        padding-right: 65% !important;
+        top: 12vh;
+        position: absolute;
+        font-size: 1.5rem !important;
+        left: 33vw;
+        padding-right: 20% !important;
+        z-index: 2;
     }
 
-    #demoGridFocus{
-        top: 52vh;
-        float: right;
-        padding-right: 10% !important;
+    #dgColorSquare1{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 31vh;
+        left: 10vw;
+        background-color: #ddeddc;
+    }
+
+    #dgColorSquare2{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 31vh;
+        left: 16vw;
+        background-color: #e07874;
+    }
+
+    #dgColorSquare3{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 31vh;
+        left: 22vw;
+        background-color: #605c5c;
+    }
+
+    #dgColorHex1{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 31vh;
+        left: 0.5vw;
+    }
+
+    #dgColorHex2{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 31vh;
+        left: 6.5vw;
+    }
+
+    #dgColorHex3{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 31vh;
+        left: 12.5vw;
+    }
+
+    #dgDevTitle{
+        font-size: 2.5rem !important;
+        position: absolute;
+        font-family: font(Sans);
+        top: 133vh;
+        text-align: left;
+        padding-left: 9%;
+        margin-bottom: 0 !important;
+    }
+
+    #dgProjectSummary{
+        position: absolute;
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        top: 139vh;
+        width: 75%;
+        margin-left: 9%;
+        height: 60vh;
+
+        #dgProjectDetails{
+            flex: .8;
+            background-color: #46484f;
+
+            #dgYearDetail{
+                #dgYearDetail1{
+                    position: absolute;
+                    left: -5vw;
+                    top: -1vh;
+                    color: #f3eff0;
+                    font-size: 3.8rem;
+                }
+                #dgYearDetail2{
+                    position: absolute;
+                    font-family: "Hind", sans-serif;
+                    top: -22vh;
+                    color: #f3eff0 ;
+                    left: 3vw;
+                    font-size: 12rem;
+                }
+                #dglangDetail{
+                    position: absolute;
+                    left: -6vw;
+                    top: 13vh;
+                    color: #292b32;
+                    font-size: 4.8rem;
+                }
+                #dglangDetail2{
+                    font-family: "Hind", sans-serif;
+                    position: absolute;
+                    top: 16vh;
+                    color: #292b32 ;
+                    left: -4vw;
+                    font-size: 7rem;
+                }
+                #dglangDetail3{
+                    font-family: "Hind", sans-serif;
+                    position: absolute;
+                    top: 33vh;
+                    color: #292b32 ;
+                    left: -4vw;
+                    font-size: 4.8rem;
+                }
+                #dglangDetail4{
+                    font-family: "Hind", sans-serif;
+                    position: absolute;
+                    top: 18vh;
+                    color: #292b32 ;
+                    left: 8vw;
+                    font-size: 10.8rem;
+                    
+                }
+            }
+
+        }
+        
+        #dgProcessPara{
+            flex: 1;
+            background-color: #292b31;
+
+            #dgProcessNum{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 5%;
+                margin-left: 91%;
+                display: flex;
+            }
+
+            #dgProcess{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.6rem;
+                margin-right: 16%;
+                word-spacing: -2px;
+                margin-left: 14%;
+            }
+
+        }
+    }
+
+    #dgProjectSummary2{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 199vh;
+        width: 100%;
+        margin-left: 9%;
+        height: 120vh;
+
+        #dgProjectDetails2{
+            flex: .5;
+            background-color: #292b32;
+
+            #dgProcessNum2{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 5%;
+                margin-left: 91%;
+                display: flex;
+            }
+
+            #dgProcess2{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.6rem;
+                margin-right: 19%;
+                margin-left: 11%;
+            }
+        }
+
+        #dgDetailImg{
+            flex: 1;
+            background-color: #46484f;
+            overflow: hidden;
+
+            #dgMockUpDetail{
+                width: 79%;
+                display: inline;
+                padding-top: 4.5%;
+                margin-left: -13%;
+            }
+
+            #dgMockUpDetail2{
+                width: 79%;
+                display: inline;
+                padding-top: 4.5%;
+                margin-left: -13%;
+            }
+        }
+
     }
 
     #demoGridScreenshot1 img{
-        width: 80%;
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    #demoGridScreenshot2 img{
-        width: 80%;
-        padding-bottom: 4%;
+        width: 70%;
+        position: absolute;
+        top: 48vh;
+        left: 2vw;
+        
     }
 }
 
@@ -155,7 +370,7 @@
 #mtModal{
     @include modalStyle();
     max-height: 1000vh;
-    height: 700vh;
+    height: 410vh;
 
     p{
         font-family: 'Open Sans', serif;
@@ -174,7 +389,7 @@
         cursor: pointer;
 
         &:hover{
-            color: #ee7170;
+            color: #c28c89;
             font-size: 2.9rem !important;
         }
     }
@@ -403,14 +618,21 @@
             flex: 1;
             background-color: #292b31;
 
+            #processNum{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 5%;
+                margin-left: 91%;
+                display: flex;
+            }
+
             #dProcess{
                 z-index: 3;
                 color: #d6d6d6;
                 text-align: left;
                 padding-right: 0;
                 padding-left: 0;
-                font-size: 1.6rem;
-                padding-top: 7%;
+                font-size: 1.8rem;
                 margin-right: 16%;
                 word-spacing: -2px;
                 margin-left: 14%;
@@ -423,6 +645,127 @@
         }
     }
 
+    #mtProjectSummary2{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 204vh;
+        width: 100%;
+        margin-left: 9%;
+        height: 80vh;
+
+        #mtDetailProcess{
+            flex: .8;
+            background-color: #292b32;
+
+            #processNum2{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 5%;
+                margin-left: 91%;
+                display: flex;
+            }
+
+            #dProcess2{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.6rem;
+                margin-right: 19%;
+                margin-left: 11%;
+            }
+
+        }
+
+        #mtDetailImg{
+            flex: 1;
+            background-color: #46484f;
+            overflow: hidden;
+
+            #mockUpDetail{
+                width: 42%;
+                margin-left: -11%;
+                display: inline;
+
+            }
+
+            #mockUpDetail2{
+                width: 44%;
+                padding-top: .5%;
+                display: inline;
+                margin-left: -4%;
+            }
+        }
+    }
+
+    #mtProjectSummary3{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 284vh;
+        width: 100%;
+        margin-left: 9%;
+        height: 121vh;
+
+        #mtDetailImg2{
+            flex: .8;
+            background-color: #46484f;
+            overflow: hidden;
+
+            #mockUpDetail3{
+                width: 75%;
+                margin-left: -1%;
+                display: inline;
+                padding-top: 1.5%;
+            }
+        }
+        #mtDetailProcess2{
+            flex: 1;
+            background-color: #292b32;
+
+            #processNum3{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 5%;
+                margin-left: 76%;
+                display: flex;
+            }
+
+            #dProcess3{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.6rem;
+                margin-right: 26%;
+                margin-left: 11%;
+            }
+
+            #processNum4{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 10%;
+                margin-left: 76%;
+                display: flex;
+            }
+
+            #dProcess4{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.6rem;
+                margin-right: 26%;
+                margin-left: 11%;
+            }
+
+        }
+    }
+
 
     #testTitle{
         font-size: 2.5rem !important;
@@ -431,23 +774,6 @@
         text-align: left;
         padding-left: 9%;
         margin-bottom: 0 !important;
-    }
-    
-
-
-    #dProcess2{
-        position: absolute;
-        top: 156vh;
-    }
-
-    #dProcess3{
-        position: absolute;
-        top: 177vh;
-    }
-
-    #dProcess4{
-        position: absolute;
-        top: 201vh;
     }
 
     #mtTestSC img{

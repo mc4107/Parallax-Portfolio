@@ -62,7 +62,7 @@
                 mtModal.open();
             })
             
-            $('.bCloseBtn').click(function(){ //change later to MTcloseBtn, including css
+            $('.mtCloseBtn').click(function(){ //change later to MTcloseBtn, including css
                 Custombox.modal.close();
             })
             
