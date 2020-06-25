@@ -58,8 +58,7 @@ body{
         }
 
         #name{
-            @include titlePos(18vh, 30vw, font(Oran), 17em, pallete(primary));
-            opacity: .9;
+            @include titlePos(18vh, 30vw, font(Oran), 17em, pallete(text));
         }
 
         #subTitle{

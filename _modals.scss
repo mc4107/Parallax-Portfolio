@@ -178,7 +178,7 @@
                     font-family: "Hind", sans-serif;
                     position: absolute;
                     top: 16vh;
-                    color: #292b32 ;
+                    color: #8497da ;
                     left: -4vw;
                     font-size: 7rem;
                 }
@@ -308,83 +308,311 @@
     #demoGridScreenshot1 img{
         width: 70%;
         position: absolute;
-        top: 48vh;
-        left: 2vw;
+        top: 36vh;
+        left: 4vw;
         
     }
 }
 
 #istModal{
     @include modalStyle();
+    max-height: 1000vh;
+    height: 325vh;
 
     p{
-        font-family: 'Open Sans', serif;
-        font-size: 1.2rem;
-        text-align: left;
         padding-right: 70%;
         padding-left: 10%;
+        font-family: font(Sans);
+        font-size: 1.2rem;
+        text-align: left;
     }
 
     .istCloseBtn{
         position: absolute;
-        font-size: 2.7rem !important;
-        margin-left: 0 !important;
         padding-left: 2% !important;
+        margin-left: 0 !important;
+        font-size: 2.7rem !important;
         transition: all .3s;
         cursor: pointer;
 
         &:hover{
-            color: #ff1a2d;
+            color: #ee7170;
             font-size: 2.9rem !important;
         }
     }
 
     #istCloseSubText{
         position: absolute;
+        top: 8.8vh;
         padding-right: 0 !important;
         padding-left: 3vw !important;
-        top: 8.8vh;
-        font-size: .8rem !important;
     }
 
     #istHeader{
-        font-family: 'Oranienbaum', serif !important;
-        font-size: 6.5rem !important;
-        margin-bottom: 0;
         padding-right: 0 !important;
-        text-align: center !important;
+        margin-top: 14vh;
+        margin-bottom: 0;
+        font-family: font(Oran);
+        font-size: 8rem !important;
     }
         
     #istSubTitle{
-        font-family: 'Open Sans', serif;
+        font-family: font(Sans);
+        position: absolute;
+        top: 27.5vh;
+        left: .4vw;
+        padding-right: 65% !important;
+        padding-bottom: 4%;
         margin-top: 0;
-        padding-right: 0 !important;
-        text-align: center !important;
-        padding-bottom: 7%;
     }  
-    
-    #istFocus{
-        top: 52vh;
-        float: right;
-        padding-right: 10% !important;
-    }
 
     #istIntro{
-        top: 37vh;
-        padding-right: 65% !important;
+        top: 12vh;
+        position: absolute;
+        font-size: 1.5rem !important;
+        left: 33vw;
+        padding-right: 20% !important;
+        z-index: 2;
+    }
+
+    #istColorSquare1{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 31vh;
+        left: 10vw;
+        background-color: #ed3a39;
+    }
+
+    #istColorSquare2{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 31vh;
+        left: 16vw;
+        background-color: #2b687b;
+    }
+
+    #istColorSquare3{
+        height: 10px;
+        width: 85px;
+        position: absolute;
+        top: 31vh;
+        left: 22vw;
+        background-color: #280c0c;
+    }
+
+    #istColorHex1{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 31vh;
+        left: 0.5vw;
+    }
+
+    #istColorHex2{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 31vh;
+        left: 6.5vw;
+    }
+
+    #istColorHex3{
+        font-family: 'Open Sans', serif !important;
+        font-size: .7rem !important;
+        position: absolute;
+        top: 31vh;
+        left: 12.5vw;
     }
 
     #istScreenshot1 img{
-        width: 80%;
-        margin-left: 0;
-        padding-left: 0;
-        padding-bottom: 3%;
+        width: 70%;
+        position: absolute;
+        top: 42vh;
+        left: 2vw;
     }
-        
-    #istScreenshot2 img{
-        width: 80%;
-        padding-bottom: 4%;
-    }    
+
+    #istDevTitle{
+        font-size: 2.5rem !important;
+        position: absolute;
+        font-family: font(Sans);
+        top: 133vh;
+        text-align: left;
+        padding-left: 9%;
+        margin-bottom: 0 !important;
+    }
+
+    #istProjectSummary{
+        position: absolute;
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        top: 139vh;
+        width: 75%;
+        margin-left: 9%;
+        height: 60vh;
+
+        #istProjectDetails{
+            flex: .8;
+            background-color: #46484f;
+
+            #istYearDetail{
+                #istYearDetail1{
+                    position: absolute;
+                    left: -5vw;
+                    top: -1vh;
+                    color: #f3eff0;
+                    font-size: 3.8rem;
+                }
+                #istYearDetail2{
+                    position: absolute;
+                    font-family: "Hind", sans-serif;
+                    top: -22vh;
+                    color: #f3eff0 ;
+                    left: 3vw;
+                    font-size: 12rem;
+                }
+                #istlangDetail{
+                    position: absolute;
+                    left: -6vw;
+                    top: 13vh;
+                    color: #292b32;
+                    font-size: 4.8rem;
+                }
+                #istlangDetail2{
+                    font-family: "Hind", sans-serif;
+                    position: absolute;
+                    top: 11vh;
+                    color: #292b32 ;
+                    left: -1vw;
+                    font-size: 9rem;
+                }
+                #istlangDetail3{
+                    font-family: "Hind", sans-serif;
+                    position: absolute;
+                    top: 37vh;
+                    color: #292b32 ;
+                    left: -4vw;
+                    font-size: 4.8rem;
+                }
+                #istlangDetail4{
+                    font-family: "Hind", sans-serif;
+                    position: absolute;
+                    top: 27vh;
+                    color: #292b32 ;
+                    left: 8vw; 
+                    font-size: 7.8rem;
+                }
+            }
+        }
+
+        #istProcessPara{
+            flex: 1;
+            background-color: #292b31;
+
+            #istProcessNum{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 5%;
+                margin-left: 91%;
+                display: flex;
+            }
+
+            #istProcess{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.6rem;
+                margin-right: 16%;
+                word-spacing: -2px;
+                margin-left: 14%;
+            }
+
+        }
+
+    }
+
+    #istProjectSummary2{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 199vh;
+        width: 100%;
+        margin-left: 9%;
+        height: 120vh;
+
+        #istProjectDetails2{
+            flex: .5;
+            background-color: #292b32;
+
+            #istProcessNum2{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 5%;
+                margin-left: 91%;
+                display: flex;
+            }
+
+            #istProcess2{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.4rem;
+                margin-right: 19%;
+                margin-left: 11%;
+            }
+
+            #istProcessNum3{
+                color: #d6d6d6;
+                font-size: 1.5rem;
+                margin-top: 10%;
+                margin-left: 91%;
+                display: flex;
+            }
+
+            #istProcess3{
+                z-index: 3;
+                color: #d6d6d6;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 1.4rem;
+                margin-right: 26%;
+                margin-left: 11%;
+            }
+
+        }
+
+        #istDetailImg{
+            flex: 1;
+            background-color: #46484f;
+            overflow: hidden;
+
+            #istMockUpDetail{
+                width: 79%;
+                display: inline;
+                padding-top: 4.5%;
+                margin-left: -13%;
+            }
+
+            #istMockUpDetail2{
+                width: 79%;
+                display: inline;
+                padding-top: 4.5%;
+                margin-left: -13%;
+            }
+        }
+
+    }
+
+
+
+
 }  
 
 #mtModal{
