@@ -5,6 +5,16 @@
 @import 'mediaQueries';
 @import 'modals';
 
+@font-face {
+    font-family: myFont;
+    src: url("PPNeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: myFontLight;
+    src: url("PPNeueMachina-Light.otf") format("opentype");
+}
+
 body{
     margin: 0;
     background-color: pallete(background);
@@ -18,12 +28,14 @@ body{
 
         #resumeShape{
             @include bannerRotatingShape(18vh, 18vw);
+            font-family: myFontLight;
         }
 
         #gitShape{
             @include bannerRotatingShape(55vh, 55vw);
             border-radius: 50%;
             text-decoration: none;
+            font-family: myFontLight;
         }
             
         #socialShape{ // Triangle Shape, no Mixin
@@ -50,8 +62,8 @@ body{
                 width: 93px;
                 height: 73px;
                 margin: 0px;
-                font-family: font(Sans);
-                font-size: 1.2rem;
+                font-family: myFontLight;
+                font-size: 1.4rem;
                 text-align: center;
                 color: #ffff;
             }
@@ -97,18 +109,20 @@ body{
 
         #introText{
             @include transitionTextPos(19vh, 10vw, 25%);
+            font-family: myFont;
 
             p{
                 margin: 0;  
             }
 
-            #introTextSub{
+            #introTextSub{ //THIS IS NOT WORKING? LOOK HERE
                 padding-left: 5%;
                 font-family: font(Sans);
-                font-size: 2rem; 
+                // font-family: myFontLight;
+                font-size: 2.2rem; 
 
                 #contactLink{
-                    color: #ff1238;
+                    color: #8a9a9f;
                     text-decoration: none;
                     cursor: pointer;
                 }
@@ -116,7 +130,8 @@ body{
         }
 
         #skillText{
-            @include transitionTextPos(105vh, 38vw, 40%);
+            @include transitionTextPos(105vh, 35vw, 40%);
+            font-family: myFont;
         }
 
         .orbs{
@@ -248,6 +263,7 @@ body{
 
         #workText{
             @include transitionTextPos(210vh, 60vw, 40%);
+            font-family: myFont;
         }
     
         #middle{
