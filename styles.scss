@@ -152,7 +152,7 @@ body{
         
             .orb-4
             {
-                @include orbStyle(105vh, 105vw, 180px, 50px);
+                @include orbStyle(105vh, 105vw, 180px, 30px);
             }
         
             .orb-5
@@ -167,7 +167,7 @@ body{
         
             .orb-7
             {   
-                @include orbStyle(128vh, 79vw, 280px, 50px);
+                @include orbStyle(128vh, 79vw, 280px, 80px);
             }
         
             .orb-8
